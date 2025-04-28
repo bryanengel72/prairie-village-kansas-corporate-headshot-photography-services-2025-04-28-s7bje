@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prairie Village Corporate Headshots | Professional Photography Services</title>
     <meta name="description" content="Premium corporate headshot photography services in Prairie Village, Kansas. Professional pose guidance, makeup services, and on-site portraits.">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -14,16 +23,30 @@
     <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://bryanengel72.github.io/prairie-village-kansas-corporate-headshot-photography-services-2025-04-28-s7bje" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     101Headshots
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Services</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#contact" class="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300">
+                    <a href="#features" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Services</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About</a>
+                    <a href="#contact" class="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105 transition-all duration-300">
                         Book Now
                     </a>
                 </div>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 text-gray-300 hover:text-white">Services</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white">Benefits</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white">Testimonials</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white">FAQ</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white">About</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white">Book Now</a>
             </div>
         </nav>
     </header>
@@ -33,14 +56,14 @@
         <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900"></div>
         <div class="container mx-auto px-6 py-24 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                    Prairie Village, Kansas Corporate Headshot Photography Services
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent animate-fade-in">
+                    Prairie Village's Premier Corporate Headshot Photography
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                    Capturing confidence of Prairie Village's pros with premium photography.
+                    Elevate your professional image with stunning headshots that capture your authentic presence and personal brand. Trusted by leading executives and professionals across Kansas City.
                 </p>
-                <a href="https://www.101headshots.com" class="inline-block px-8 py-4 text-lg font-semibold bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300">
-                    Schedule Your Session
+                <a href="#contact" class="inline-block px-8 py-4 text-lg font-semibold bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300">
+                    Book Your Session Today
                 </a>
             </div>
         </div>
@@ -50,52 +73,170 @@
     <section id="features" class="py-24 bg-gray-800/50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Professional Services
+                Comprehensive Professional Services
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-gray-800 rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+                <div class="bg-gray-800 rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transform hover:scale-102 transition-all duration-300">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12a7 7 0 11-14 0 7 7 0 0114 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Pose Advice</h3>
-                    <p class="text-gray-400">Expert guidance to capture your most confident and professional angles.</p>
+                    <h3 class="text-xl font-semibold mb-4">Expert Pose Guidance</h3>
+                    <p class="text-gray-400">Personalized coaching to capture your most flattering angles and expressions. Our proven techniques ensure natural, confident poses that highlight your professional presence.</p>
                 </div>
                 
-                <div class="bg-gray-800 rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+                <div class="bg-gray-800 rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transform hover:scale-102 transition-all duration-300">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Pro Makeup</h3>
-                    <p class="text-gray-400">Professional makeup services to ensure you look your absolute best.</p>
+                    <h3 class="text-xl font-semibold mb-4">Professional Makeup Services</h3>
+                    <p class="text-gray-400">Camera-ready makeup application by licensed artists using premium products. Natural-looking results that enhance your features while maintaining a professional appearance.</p>
                 </div>
 
-                <div class="bg-gray-800 rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+                <div class="bg-gray-800 rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transform hover:scale-102 transition-all duration-300">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Site Portraits</h3>
-                    <p class="text-gray-400">Convenient on-location photography at your office or preferred setting.</p>
+                    <h3 class="text-xl font-semibold mb-4">Convenient On-Site Sessions</h3>
+                    <p class="text-gray-400">Full professional studio setup at your location. Perfect for corporate teams, minimizing downtime while maintaining consistent quality across all employee headshots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">About 101Headshots</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <p class="text-lg text-gray-300">
+                    Founded in 2015, 101Headshots emerged from a passion for capturing authentic professional portraits that truly represent our clients' personal brands. What started as a small studio in Prairie Village has grown into the region's most trusted corporate photography service, having photographed over 5,000 professionals across Kansas City.
+                </p>
+                <p class="text-lg text-gray-300">
+                    Our mission is to provide exceptional headshot photography that empowers professionals to make strong first impressions and build meaningful connections. We believe in the power of authentic visual representation and are committed to delivering premium quality, personalized service, and a comfortable photography experience for every client.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">Client Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transform hover:scale-102 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The team at 101Headshots transformed my professional image. Their guidance on posing and attention to detail resulted in the best headshot I've ever had. I've received countless compliments on LinkedIn, and it's definitely helped with client relationships."</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p class="text-sm text-gray-400">Senior Partner, KC Law Associates</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transform hover:scale-102 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The on-site corporate session for our entire executive team was seamless and efficient. The photographer's ability to make everyone feel comfortable while maintaining professionalism was impressive."</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-sm text-gray-400">CEO, TechStart Solutions</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transform hover:scale-102 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The makeup artist was fantastic and really understood how to create a natural, professional look. The whole experience exceeded my expectations."</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">Rachel Martinez</p>
+                        <p class="text-sm text-gray-400">Regional Director, Global Finance Corp</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl hover:shadow-purple-500/10 transform hover:scale-102 transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">"As someone who usually hates having their photo taken, I was amazed at how comfortable and confident I felt during the session. The results were beyond what I could have hoped for."</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">David Thompson</p>
+                        <p class="text-sm text-gray-400">Independent Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                Frequently Asked Questions
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">How long does a headshot session take?</h3>
+                    <p class="text-gray-300">Standard sessions typically last 30-45 minutes, including makeup application. Corporate group sessions are scheduled based on team size, with multiple shots per person to ensure the perfect image.</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">What should I wear for my headshot?</h3>
+                    <p class="text-gray-300">We recommend solid colors and professional attire that reflects your industry. Avoid busy patterns or bright colors that might distract from your face. We'll provide detailed guidance upon booking.</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">How quickly will I receive my photos?</h3>
+                    <p class="text-gray-300">Digital proofs are available within 48 hours, and final retouched images are delivered within 5 business days. Rush delivery is available for an additional fee.</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">Do you offer retouching services?</h3>
+                    <p class="text-gray-300">Yes, professional retouching is included with every session. We focus on natural-looking results while maintaining your authentic appearance.</p>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">Can you accommodate large corporate teams?</h3>
+                    <p class="text-gray-300">Absolutely! We specialize in corporate team sessions and can photograph up to 30 people per day on-site. We'll work with your schedule to minimize disruption to your workday.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 relative overflow-hidden">
+    <section class="py-24 relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80');">
         <div class="absolute inset-0 bg-gradient-to-br from-purple-900/90 to-gray-900/90 z-10"></div>
         <div class="container mx-auto px-6 relative z-20">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to elevate your professional image?</h2>
-                <p class="text-xl text-gray-300 mb-12">Book your session today and stand out with a premium corporate headshot.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Professional Image?</h2>
+                <p class="text-xl text-gray-300 mb-12">Book your session today and join the hundreds of satisfied professionals who trust 101Headshots for their personal branding needs.</p>
                 <a href="mailto:bryan@101headshots.com" class="inline-block px-8 py-4 text-lg font-semibold bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300">
-                    Contact Us
+                    Schedule Your Session
                 </a>
             </div>
         </div>
@@ -109,7 +250,7 @@
                     <h3 class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">
                         101Headshots
                     </h3>
-                    <p class="text-gray-400">Premium corporate headshot photography in Prairie Village, Kansas.</p>
+                    <p class="text-gray-400">Elevating professional images in Prairie Village and beyond since 2015.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
@@ -121,14 +262,17 @@
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
-                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://bryanengel72.github.io/prairie-village-kansas-corporate-headshot-photography-services-2025-04-28-s7bje/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://bryanengel72.github.io/prairie-village-kansas-corporate-headshot-photography-services-2025-04-28-s7bje/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://bryanengel72.github.io/prairie-village-kansas-corporate-headshot-photography-services-2025-04-28-s7bje/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -137,5 +281,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
